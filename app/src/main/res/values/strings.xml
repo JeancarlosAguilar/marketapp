@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">marketapp</string>
+    <string name="tv_slides_msg_show">TOKOTO</string>
+    <string name="tv_slides_msg_show_1">Welcome to <b>Tokoto,</b> Let\'s shop!</string>
+    <string name="tv_slides_msg_show_2">We help people conect with store \n around United State of America</string>
+    <string name="tv_slides_msg_show_3">We shop the easy way to shop. \n Just stay at home with us</string>
+
+    <string name="btn_continue_show">Continue</string>
+
 </resources>
