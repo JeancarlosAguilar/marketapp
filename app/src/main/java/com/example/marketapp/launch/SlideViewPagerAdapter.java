@@ -13,8 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.marketapp.R;
-import com.example.marketapp.launch.MainActivity;
-import com.example.marketapp.launch.SlideActivity;
 
 
 public class SlideViewPagerAdapter extends PagerAdapter {

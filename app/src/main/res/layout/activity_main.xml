@@ -4,14 +4,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".launch.MainActivity">
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animacioninicio"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/splash_app" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    tools:context=".launch.MainActivity"/>
