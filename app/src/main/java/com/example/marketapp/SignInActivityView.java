@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.marketapp.databinding.ActivitySignInViewBinding;
+import com.example.marketapp.view.SignUp1ActivityView;
 
 public class SignInActivityView extends AppCompatActivity {
 

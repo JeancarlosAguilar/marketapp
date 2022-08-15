@@ -17,7 +17,7 @@
             android:name=".SignUp2ActivityView"
             android:exported="false" />
         <activity
-            android:name=".SignUp1ActivityView"
+            android:name=".view.SignUp1ActivityView"
             android:exported="false" />
         <activity
             android:name=".SignInActivityView"

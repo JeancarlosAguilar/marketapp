@@ -50,4 +50,7 @@
     <string name="tv_signup2_msg_show_2">Complete Profile</string>
     <string name="tv_signup2_msg_show_3">Complete your details or continue \n with social media</string>
 
+
+    <string name="error_password">Passwords Unequals</string>
+
 </resources>
