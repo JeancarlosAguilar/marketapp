@@ -31,8 +31,8 @@ public class SignUp1Presenter implements SignUp1Interactor.Presenter {
     }
 
     @Override
-    public void errorPassword(String error) {
-        view.mostrarError(error);
+    public void alerta(String msg) {
+        view.mostrarAlerta(msg);
     }
 
 }

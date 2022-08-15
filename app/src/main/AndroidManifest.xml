@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Marketapp"
         tools:targetApi="31">
         <activity
-            android:name=".SignUp2ActivityView"
+            android:name=".view.SignUp2ActivityView"
             android:exported="false" />
         <activity
             android:name=".view.SignUp1ActivityView"

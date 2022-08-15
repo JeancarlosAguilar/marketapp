@@ -5,7 +5,7 @@ import android.content.Intent;
 
 import com.example.marketapp.R;
 import com.example.marketapp.interactor.SignUp1Interactor;
-import com.example.marketapp.SignUp2ActivityView;
+import com.example.marketapp.view.SignUp2ActivityView;
 
 public class SignUp1Model implements SignUp1Interactor.Model {
 
@@ -18,15 +18,22 @@ public class SignUp1Model implements SignUp1Interactor.Model {
     @Override
     public void validarSignUp1(Context context, String email, String password, String confirmpassword) {
 
-        if (password.equals(confirmpassword)) {
-            Intent intent = new Intent(context, SignUp2ActivityView.class);
-            intent.putExtra("email", email);
-            intent.putExtra("password", password);
-            presenter.cambiarPantalla(intent);
+        if (email.equals("") || password.equals("") || confirmpassword.equals("")) {
+            presenter.alerta(context.getString(R.string.alert_empty_fields));
         } else {
-            presenter.errorPassword(context.getString(R.string.error_password));
-        }
 
+            if (password.equals(confirmpassword)) {
+
+                Intent intent = new Intent(context, SignUp2ActivityView.class);
+                intent.putExtra("email", email);
+                intent.putExtra("password", password);
+                presenter.cambiarPantalla(intent);
+
+            } else {
+                presenter.alerta(context.getString(R.string.alert_password));
+            }
+
+        }
 
     }
 

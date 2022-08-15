@@ -52,8 +52,8 @@ public class SignUp1ActivityView extends AppCompatActivity implements SignUp1Int
     }
 
     @Override
-    public void mostrarError(String error) {
-        Toast.makeText(this, error, Toast.LENGTH_SHORT).show();
+    public void mostrarAlerta(String msg) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
 

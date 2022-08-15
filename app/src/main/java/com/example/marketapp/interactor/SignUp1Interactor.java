@@ -8,7 +8,7 @@ public interface SignUp1Interactor {
     interface View {
         void cambiarPantalla(Intent intent);
 
-        void mostrarError(String error);
+        void mostrarAlerta(String msg);
     }
 
     interface Presenter {
@@ -16,7 +16,7 @@ public interface SignUp1Interactor {
 
         void cambiarPantalla(Intent intent);
 
-        void errorPassword(String error);
+        void alerta(String msg);
     }
 
     interface Model {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp2ActivityView">
+    tools:context=".view.SignUp2ActivityView">
 
     <ImageView
         android:id="@+id/img_signup2_back"
@@ -103,7 +103,7 @@
                 android:id="@+id/et_signup2_firstname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                 android:drawableEnd="@drawable/user"
                 android:inputType="textPersonName"
                 android:maxLength="15" />
@@ -129,7 +129,7 @@
                 android:id="@+id/et_signup2_lastname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                 android:drawableEnd="@drawable/user"
                 android:inputType="textPersonName"
                 android:maxLength="15" />
