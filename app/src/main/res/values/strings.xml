@@ -27,11 +27,27 @@
     <string name="title_et_confirmpassword">Confirm Password</string>
     <string name="hint_et_confirmpassword">Re-enter your password</string>
 
+    <string name="title_et_firstname">First Name</string>
+    <string name="hint_et_firstname">Enter your first name</string>
 
-    <string name="tv_signup_msg_show_1">Sign Up</string>
-    <string name="tv_signup_msg_show_2">Register Account</string>
-    <string name="tv_signup_msg_show_3">Complete your details or continue \n with social media</string>
-    <string name="tv_signup_msg_show_4">By continuing your confirm that you agree \n with our Term and Condition</string>
+    <string name="title_et_lastname">Last Name</string>
+    <string name="hint_et_lastname">Enter your last name</string>
 
+    <string name="title_et_phonenumber">Phone Number</string>
+    <string name="hint_et_phonenumber">Enter your phone number</string>
+
+    <string name="title_et_address">Address</string>
+    <string name="hint_et_address">Enter your address</string>
+
+
+    <string name="tv_signup1_msg_show_1">Sign Up</string>
+    <string name="tv_signup1_msg_show_2">Register Account</string>
+    <string name="tv_signup1_msg_show_3">Complete your details or continue \n with social media</string>
+    <string name="tv_signup1_msg_show_4">By continuing your confirm that you agree \n with our Term and Condition</string>
+
+
+    <string name="tv_signup2_msg_show_1">Sign Up</string>
+    <string name="tv_signup2_msg_show_2">Complete Profile</string>
+    <string name="tv_signup2_msg_show_3">Complete your details or continue \n with social media</string>
 
 </resources>

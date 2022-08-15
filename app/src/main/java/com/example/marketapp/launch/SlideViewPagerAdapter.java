@@ -13,8 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.marketapp.R;
-import com.example.marketapp.launch.MainActivity;
-import com.example.marketapp.launch.SlideActivity;
 
 
 public class SlideViewPagerAdapter extends PagerAdapter {
@@ -50,7 +48,7 @@ public class SlideViewPagerAdapter extends PagerAdapter {
         ImageView img_point_2 = view.findViewById(R.id.img_point_2);
         ImageView img_point_3 = view.findViewById(R.id.img_point_3);
 
-        Button btn_continue = view.findViewById(R.id.btn_continue);
+        Button btn_continue = view.findViewById(R.id.btn_signup1_continue);
 
         switch (position) {
             case 0:

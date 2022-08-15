@@ -129,7 +129,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <Button
-        android:id="@+id/btn_continue"
+        android:id="@+id/btn_signup1_continue"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
@@ -154,7 +154,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_continue"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup1_continue"
         app:srcCompat="@drawable/google_icon" />
 
     <ImageView
@@ -168,7 +168,7 @@
         app:layout_constraintEnd_toStartOf="@+id/img_twitter"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/img_google"
-        app:layout_constraintTop_toBottomOf="@+id/btn_continue"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup1_continue"
         app:srcCompat="@drawable/facebook_2" />
 
     <ImageView
@@ -180,7 +180,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/img_facebook"
-        app:layout_constraintTop_toBottomOf="@+id/btn_continue"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup1_continue"
         app:srcCompat="@drawable/twitter" />
 
     <TextView

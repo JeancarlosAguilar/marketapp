@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivityView">
+    tools:context=".SignUp1ActivityView">
 
     <ImageView
-        android:id="@+id/img_back"
+        android:id="@+id/img_signup1_back"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="35dp"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/muli"
-        android:text="@string/tv_signup_msg_show_1"
+        android:text="@string/tv_signup1_msg_show_1"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/muli_semi_bold"
-        android:text="@string/tv_signup_msg_show_2"
+        android:text="@string/tv_signup1_msg_show_2"
         android:textColor="@color/app_black"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/muli"
-        android:text="@string/tv_signup_msg_show_3"
+        android:text="@string/tv_signup1_msg_show_3"
         android:textAlignment="center"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,11 +101,12 @@
             app:prefixText="\t">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_signup_email"
+                android:id="@+id/et_signup1_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/mail"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:maxLength="30" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -125,7 +126,7 @@
             app:prefixText="\t">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_signup_password"
+                android:id="@+id/et_signup1_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/lock"
@@ -149,7 +150,7 @@
             app:prefixText="\t">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_signup_confirmpassword"
+                android:id="@+id/et_signup1_confirmpassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/lock"
@@ -160,7 +161,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_continue"
+        android:id="@+id/btn_signup1_continue"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
@@ -185,7 +186,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_continue"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup1_continue"
         app:srcCompat="@drawable/google_icon" />
 
     <ImageView
@@ -199,7 +200,7 @@
         app:layout_constraintEnd_toStartOf="@+id/img_twitter2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/img_google2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_continue"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup1_continue"
         app:srcCompat="@drawable/facebook_2" />
 
     <ImageView
@@ -211,7 +212,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/img_facebook2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_continue"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup1_continue"
         app:srcCompat="@drawable/twitter" />
 
     <TextView
@@ -220,7 +221,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/muli"
-        android:text="@string/tv_signup_msg_show_4"
+        android:text="@string/tv_signup1_msg_show_4"
         android:textAlignment="center"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"

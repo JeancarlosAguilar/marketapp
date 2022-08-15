@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import com.example.marketapp.databinding.ActivitySignInViewBinding;
-import com.example.marketapp.databinding.ActivitySignUpViewBinding;
 
 public class SignInActivityView extends AppCompatActivity {
 
@@ -26,7 +24,7 @@ public class SignInActivityView extends AppCompatActivity {
 
     private void btn_signup() {
         binding.tvSigninMsg6.setOnClickListener(view -> {
-            Intent intent = new Intent(SignInActivityView.this, SignUpActivityView.class);
+            Intent intent = new Intent(SignInActivityView.this, SignUp1ActivityView.class);
             startActivity(intent);
         });
     }
