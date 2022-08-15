@@ -7,4 +7,19 @@
 
     <string name="btn_continue_show">Continue</string>
 
+    <string name="tv_signin_msg_show_1">Sign In</string>
+    <string name="tv_signin_msg_show_2">Welcome Back</string>
+    <string name="tv_signin_msg_show_3">Sign in with you email and password \n or continue with social media</string>
+    <string name="tv_signin_msg_show_4"><u>Forgot Password</u></string>
+    <string name="tv_signin_msg_show_5">Don\'t have an account?</string>
+    <string name="tv_signin_msg_show_6">Sign Up</string>
+    <string name="cb_signin_msg">Remember me</string>
+
+    <string name="title_et_email">Email</string>
+    <string name="hint_et_email">Enter your email</string>
+
+    <string name="title_et_password">Password</string>
+    <string name="hint_et_password">Enter your password</string>
+
+
 </resources>

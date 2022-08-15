@@ -1,12 +1,10 @@
-package com.example.marketapp.launch;
+package com.example.marketapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import com.example.marketapp.R;
 
 
 public class SlideActivity extends AppCompatActivity {

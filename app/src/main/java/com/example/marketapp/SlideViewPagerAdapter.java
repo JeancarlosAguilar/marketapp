@@ -1,4 +1,4 @@
-package com.example.marketapp.launch;
+package com.example.marketapp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.example.marketapp.MainActivity;
 import com.example.marketapp.R;
+import com.example.marketapp.SlideActivity;
 
 
 public class SlideViewPagerAdapter extends PagerAdapter {
