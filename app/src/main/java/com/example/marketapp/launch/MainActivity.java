@@ -1,4 +1,4 @@
-package com.example.marketapp;
+package com.example.marketapp.launch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+
+import com.example.marketapp.R;
+import com.example.marketapp.SignInActivityView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -16,13 +19,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this, SignInActivityView.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            Intent intent = new Intent(MainActivity.this, SignInActivityView.class);
+            startActivity(intent);
+            finish();
         }, 1000);
 
 
