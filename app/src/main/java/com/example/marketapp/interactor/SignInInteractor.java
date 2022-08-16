@@ -14,7 +14,7 @@ public interface SignInInteractor {
 
     interface Presenter {
         //ENTRADA
-        void pasardatos(Context context, String email, String password);
+        void pasardatos(Context context, String email, String password, boolean checket);
 
         //SALIDA
         void cambiarPantalla(Intent intent);
@@ -24,7 +24,7 @@ public interface SignInInteractor {
 
     interface Model {
         //LOGICA
-        void validarSignIn(Context context, String email, String password);
+        void validarSignIn(Context context, String email, String password, boolean checket);
     }
 
 }

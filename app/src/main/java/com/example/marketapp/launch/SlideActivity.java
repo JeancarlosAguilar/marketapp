@@ -28,8 +28,8 @@ public class SlideActivity extends AppCompatActivity {
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         } else {
-            SharedPreferences.Editor editor = getSharedPreferences("slide", MODE_PRIVATE).edit();
-            editor.putBoolean("slide", true);
+            SharedPreferences.Editor editor = getSharedPreferences("USER", MODE_PRIVATE).edit();
+            editor.putBoolean("SLIDE", true);
             editor.apply();
         }
 
@@ -37,8 +37,8 @@ public class SlideActivity extends AppCompatActivity {
 
     private boolean isOpenAlReady() {
 
-        SharedPreferences sharedPreferences = getSharedPreferences("slide", MODE_PRIVATE);
-        boolean result = sharedPreferences.getBoolean("slide", false);
+        SharedPreferences sharedPreferences = getSharedPreferences("USER", MODE_PRIVATE);
+        boolean result = sharedPreferences.getBoolean("SLIDE", false);
         return result;
 
     }

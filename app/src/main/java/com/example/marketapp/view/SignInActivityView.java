@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.marketapp.LoginSuccessActivityView;
 import com.example.marketapp.R;
 import com.example.marketapp.interactor.SignInInteractor;
 import com.example.marketapp.presenter.SignInPresenter;
@@ -28,6 +30,12 @@ public class SignInActivityView extends AppCompatActivity implements SignInInter
 
         presenter = new SignInPresenter(this);
 
+
+        if (checkSession()) {
+            startActivity(new Intent(this, LoginSuccessActivityView.class));
+            finish();
+        }
+
         btn_signup();
         btn_continue();
     }
@@ -39,7 +47,8 @@ public class SignInActivityView extends AppCompatActivity implements SignInInter
                 Context context = SignInActivityView.this;
                 String email = binding.etSigninEmail.getText().toString();
                 String password = binding.etSigninPassword.getText().toString();
-                presenter.pasardatos(context, email, password);
+                boolean checket = binding.cbSignin.isChecked();
+                presenter.pasardatos(context, email, password, checket);
             }
         });
     }
@@ -49,6 +58,11 @@ public class SignInActivityView extends AppCompatActivity implements SignInInter
             Intent intent = new Intent(SignInActivityView.this, SignUp1ActivityView.class);
             startActivity(intent);
         });
+    }
+
+    private boolean checkSession() {
+        SharedPreferences preferences = getSharedPreferences("USER", Context.MODE_PRIVATE);
+        return preferences.getBoolean("SESSION", false);
     }
 
     @Override

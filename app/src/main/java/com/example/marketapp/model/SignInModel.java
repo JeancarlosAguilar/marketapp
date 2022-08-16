@@ -22,7 +22,7 @@ public class SignInModel implements SignInInteractor.Model {
     }
 
     @Override
-    public void validarSignIn(Context context, String email, String password) {
+    public void validarSignIn(Context context, String email, String password, boolean checket) {
         myDB = new AdminSQLiteOpenHelper(context);
         if (email.equals("") || password.equals("")) {
             presenter.alerta(context.getString(R.string.alert_empty_fields));
@@ -30,6 +30,7 @@ public class SignInModel implements SignInInteractor.Model {
             boolean checkUserLogin = myDB.checkUserLogin(email, password);
             if (checkUserLogin) {
 
+                guardarSesion(context, checket);
                 guardarIdUser(context, email); // guardamos id del usuario registrado para usarlo dentro del sistema
                 Intent intent = new Intent(context, LoginSuccessActivityView.class);
                 presenter.cambiarPantalla(intent);
@@ -50,9 +51,16 @@ public class SignInModel implements SignInInteractor.Model {
         String id_usuario = (cursor.getString(0));
         cursor.close();
 
-        SharedPreferences preferences = context.getSharedPreferences("USUARIO", Context.MODE_PRIVATE);
+        SharedPreferences preferences = context.getSharedPreferences("USER", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("id_usuario", id_usuario);
+        editor.putString("ID_USUARIO", id_usuario);
+        editor.apply();
+    }
+
+    public void guardarSesion(Context context, boolean checket) {
+        SharedPreferences preferences = context.getSharedPreferences("USER", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean("SESSION", checket);
         editor.apply();
     }
 

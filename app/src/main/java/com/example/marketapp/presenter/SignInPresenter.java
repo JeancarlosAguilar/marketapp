@@ -17,8 +17,8 @@ public class SignInPresenter implements SignInInteractor.Presenter {
     }
 
     @Override
-    public void pasardatos(Context context, String email, String password) {
-        model.validarSignIn(context, email, password);
+    public void pasardatos(Context context, String email, String password, boolean checket) {
+        model.validarSignIn(context, email, password, checket);
     }
 
     @Override
