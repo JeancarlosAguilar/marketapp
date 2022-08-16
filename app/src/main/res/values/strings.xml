@@ -40,6 +40,9 @@
     <string name="hint_et_address">Enter your address</string>
 
 
+    <string name="hint_et_search">\tSearch product</string>
+
+
     <string name="tv_signup1_msg_show_1">Sign Up</string>
     <string name="tv_signup1_msg_show_2">Register Account</string>
     <string name="tv_signup1_msg_show_3">Complete your details or continue \n with social media</string>
