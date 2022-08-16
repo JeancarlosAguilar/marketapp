@@ -64,4 +64,20 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
             return false; // FALSE = NO EXISTE
     }
 
+    public boolean checkUserLogin(String email, String password) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] columnas = {COL_1};
+        String seleccion = COL_2 + "=?" + " and " + COL_3 + " =? ";
+        String[] selecciongumentos = {email, password};
+        Cursor cursor = db.query(TABLE_NAME1, columnas, seleccion, selecciongumentos, null, null, null);
+        int cont = cursor.getCount();
+        db.close();
+        cursor.close();
+        if (cont > 0)
+            return true;
+        else
+            return false;
+    }
+
 }

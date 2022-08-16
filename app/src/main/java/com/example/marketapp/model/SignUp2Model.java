@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.marketapp.R;
-import com.example.marketapp.SignInActivityView;
+import com.example.marketapp.view.SignInActivityView;
 import com.example.marketapp.interactor.SignUp2Interactor;
 import com.example.marketapp.data.AdminSQLiteOpenHelper;
 

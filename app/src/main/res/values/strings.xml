@@ -51,9 +51,15 @@
     <string name="tv_signup2_msg_show_3">Complete your details or continue \n with social media</string>
 
 
+    <string name="tv_ls_msg_show_1">Login Success</string>
+    <string name="tv_ls_msg_show_2">Login Success</string>
+    <string name="btn_continue_ls_show">Back to home</string>
+
+
     <string name="alert_password">Passwords Unequals</string>
     <string name="alert_empty_fields">Empty Fields</string>
     <string name="alert_user_exist">The user with that email already exists</string>
     <string name="alert_user_successfully_registed">User successfully registered</string>
+    <string name="alert_user_invalid_data">Verify your data and try again</string>
 
 </resources>

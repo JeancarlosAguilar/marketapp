@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 import com.example.marketapp.R;
-import com.example.marketapp.SignInActivityView;
+import com.example.marketapp.view.SignInActivityView;
 
 
 public class MainActivity extends AppCompatActivity {
