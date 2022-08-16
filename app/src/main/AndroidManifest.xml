@@ -17,7 +17,7 @@
             android:name=".SystemIndexActivityView"
             android:exported="false" />
         <activity
-            android:name=".LoginSuccessActivityView"
+            android:name=".view.LoginSuccessActivityView"
             android:exported="false" />
         <activity
             android:name=".view.SignUp2ActivityView"

@@ -9,8 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.marketapp.LoginSuccessActivityView;
 import com.example.marketapp.R;
+import com.example.marketapp.SystemIndexActivityView;
 import com.example.marketapp.interactor.SignInInteractor;
 import com.example.marketapp.presenter.SignInPresenter;
 import com.example.marketapp.databinding.ActivitySignInViewBinding;
@@ -32,7 +32,7 @@ public class SignInActivityView extends AppCompatActivity implements SignInInter
 
 
         if (checkSession()) {
-            startActivity(new Intent(this, LoginSuccessActivityView.class));
+            startActivity(new Intent(this, SystemIndexActivityView.class));
             finish();
         }
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_white"
-    tools:context=".LoginSuccessActivityView">
+    tools:context=".view.LoginSuccessActivityView">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline13"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
     <Button
-        android:id="@+id/btn_ls_continue"
+        android:id="@+id/btn_ls_backothome"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="100dp"

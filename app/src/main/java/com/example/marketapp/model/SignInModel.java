@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.marketapp.LoginSuccessActivityView;
+import com.example.marketapp.view.LoginSuccessActivityView;
 import com.example.marketapp.R;
 import com.example.marketapp.interactor.SignInInteractor;
 import com.example.marketapp.data.AdminSQLiteOpenHelper;
