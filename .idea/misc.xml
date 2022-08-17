@@ -15,10 +15,13 @@
         <entry key="..\:/Users/Charly/AndroidStudioProjects/marketapp/app/src/main/res/layout/activity_system_index_view.xml" value="0.278125" />
         <entry key="..\:/Users/Charly/AndroidStudioProjects/marketapp/app/src/main/res/layout/activity_test.xml" value="0.2640625" />
         <entry key="..\:/Users/Charly/AndroidStudioProjects/marketapp/app/src/main/res/layout/slide_screen.xml" value="0.278125" />
+        <entry key="..\:/Users/Kevin/Documents/GitHub/marketapp/app/src/main/res/layout/activity_system_acc_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kevin/Documents/GitHub/marketapp/app/src/main/res/layout/activity_system_index_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Kevin/Documents/GitHub/marketapp/app/src/main/res/layout/item_system_index_popular.xml" value="0.253125" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

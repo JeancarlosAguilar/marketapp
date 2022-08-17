@@ -1,6 +1,4 @@
 
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 o
 ?app/src/main/java/com/example/marketapp/model/SignUp1Model.java,4\5\45e032ede4c5b92affa298479099a525a8c0930a
 w
