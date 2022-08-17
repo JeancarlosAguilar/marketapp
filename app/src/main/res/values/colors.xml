@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
 
+    <color name="f1">#FCFCFC</color>
+    <color name="f2">#F2F3F7</color>
     <color name="app_orange">#F77A47</color>
     <color name="app_white">#F7F7F7</color>
     <color name="app_gray">#717171</color>

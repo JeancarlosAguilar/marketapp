@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SystemAccActivityView">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <ImageView
+        android:id="@+id/img_sacc_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/tv_sacc_msg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/muli"
+        android:text="@string/tv_sacc_msg_show_1"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_sacc_profile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sacc_msg_1"
+        app:srcCompat="@drawable/profile_image" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline18">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_sacc_acc"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="fill"
+                android:text="@string/btn_sacc_show_1"
+                android:textAllCaps="false"
+                android:textColor="@color/app_gray"
+                app:backgroundTint="@color/f2"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/user_on"
+                app:iconSize="21dp" />
+
+            <Button
+                android:id="@+id/btn_x1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="fill"
+                android:text="@string/btn_sacc_show_2"
+                android:textAllCaps="false"
+                android:textColor="@color/app_gray"
+                app:backgroundTint="@color/f2"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/bell_on"
+                app:iconSize="21dp" />
+
+            <Button
+                android:id="@+id/btn_x2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="fill"
+                android:text="@string/btn_sacc_show_3"
+                android:textAllCaps="false"
+                android:textColor="@color/app_gray"
+                app:backgroundTint="@color/f2"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/settings"
+                app:iconSize="21dp" />
+
+            <Button
+                android:id="@+id/btn_x3"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="fill"
+                android:text="@string/btn_sacc_show_4"
+                android:textAllCaps="false"
+                android:textColor="@color/app_gray"
+                app:backgroundTint="@color/f2"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/question_mark"
+                app:iconSize="21dp" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/muli_semi_bold"
+                android:gravity="fill"
+                android:text="@string/btn_sacc_show_5"
+                android:textAllCaps="false"
+                android:textColor="@color/app_gray"
+                app:backgroundTint="@color/f2"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/log_out"
+                app:iconSize="21dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17">
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/shop_icon_off" />
+
+        <ImageView
+            android:id="@+id/img_favorite"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart_off" />
+
+        <ImageView
+            android:id="@+id/img_chat"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chat_off" />
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/user_on" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

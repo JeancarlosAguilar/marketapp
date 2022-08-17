@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_white"
     tools:context=".SystemIndexActivityView">
 
     <androidx.constraintlayout.widget.Guideline
@@ -41,7 +40,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="10"
-            app:boxBackgroundColor="@color/app_litle_gray"
+            app:boxBackgroundColor="@color/f2"
             app:boxCornerRadiusBottomEnd="20dp"
             app:boxCornerRadiusBottomStart="20dp"
             app:boxCornerRadiusTopEnd="20dp"
@@ -86,7 +85,6 @@
         app:layout_constraintTop_toTopOf="@+id/guideline15">
 
 
-
     </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
@@ -107,7 +105,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginBottom="5dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/shop_icon_off" />
+            app:srcCompat="@drawable/shop_icon_on" />
 
         <ImageView
             android:id="@+id/img_favorite"
@@ -132,7 +130,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/user_icon" />
+            app:srcCompat="@drawable/user_off" />
 
     </LinearLayout>
 
