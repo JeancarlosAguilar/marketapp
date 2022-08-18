@@ -1,0 +1,10 @@
+
+h	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÆìÅøÿÿÿÿ
+c	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó®ìÀ
+G
+java:S16021",Remove useless curly braces around statement(ËŞÆšûÿÿÿÿ
+h	java:S1006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ¸ŸËşÿÿÿÿ
+B
+java:S16027",Remove useless curly braces around statement(¾Â­ê
+>
+java:S1068"(Remove this unused "siav" private field.(ŒëÑÉ
