@@ -24,26 +24,28 @@ import retrofit2.http.Path;
 public class SystemIndexActivityView extends AppCompatActivity {
 
     private ActivitySystemIndexViewBinding binding;
-    private SystemIndexAdapter systemIndexAdapter;
-    private List<PopularModel> popularModelList;
+  //  private SystemIndexAdapter systemIndexAdapter;
+   // private List<PopularModel> popularModelList;
     private SOService mService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_system_index_view);
-
         binding = ActivitySystemIndexViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Log.e("Data", "Hola2");
 
         mService = getClientRetrofit();
 
         btnr();
-        setAdapterPopular();
+       // setAdapterPopular();
         manageResponseApi();
     }
 
-    private void btnr() { // AÑADIR MVP
+
+    private void btnr() {
+        //TODO AÑADIR MVP
         binding.imgProfile.setOnClickListener(view -> {
             Intent intent = new Intent(SystemIndexActivityView.this, SystemAccActivityView.class);
             startActivity(intent);
@@ -51,19 +53,21 @@ public class SystemIndexActivityView extends AppCompatActivity {
     }
 
 
-    private void setAdapterPopular() {
-        systemIndexAdapter = new SystemIndexAdapter(popularModelList);
+   /* private void setAdapterPopular() {
+        systemIndexAdapter = new SystemIndexAdapter();
         binding.rvPopularproduct.setAdapter(systemIndexAdapter);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
         binding.rvPopularproduct.setLayoutManager(layoutManager);
-    }
+    }*/
 
     public static class RetrofitClient {
 
         private static Retrofit retrofit = null;
 
         public static Retrofit getClient(String baseUrl) {
+            Log.e("Data", "Hola3");
             if (retrofit == null) {
+                Log.e("Data", "Hola4");
                 retrofit = new Retrofit.Builder()
                         .baseUrl(baseUrl)
                         .addConverterFactory(GsonConverterFactory.create())
@@ -75,24 +79,31 @@ public class SystemIndexActivityView extends AppCompatActivity {
 
     private static SOService getClientRetrofit() {
 
+        Log.e("Data", "Hola5");
         return RetrofitClient.getClient("https://api.mercadolibre.com").create(SOService.class);
     }
 
     private interface SOService {
+        @GET("/categories")
+        Call<List<PopularResponse>> getAnswers();
 
-        @GET("/sites/MCO/search?category=MCO1574")
-        Call<PopularResponse> getAnswers();
+        /*  @GET("/sites/MCO/categories")
+        Call<List<PopularModel>> getAnswers();*/
 
     }
 
     private void manageResponseApi() {
+        Log.e("Data", "Hola6");
        // for (int i = 0; i < popularModelList.size(); i++) {
-            mService.getAnswers().enqueue(new Callback<PopularResponse>() {
+            mService.getAnswers().enqueue(new Callback<List<PopularResponse>>() {
                 @Override
-                public void onResponse(@NonNull Call<PopularResponse> call, @NonNull Response<PopularResponse> response) {
+                public void onResponse(@NonNull Call<List<PopularResponse>> call, @NonNull Response<List<PopularResponse>> response) {
                     if (response.isSuccessful()) {
-                        systemIndexAdapter.updateAnswers(response.body().getPopularModelList());
-                        Log.d("MainActivity", "posts loaded from API");
+                       // systemIndexAdapter.updateAnswers(response.body().getPopularModelList());
+                        Log.e("Data", "Popular"+ response.body().get(2));
+                        Log.e("Data", "Body"+ response.body());
+                        Log.e("Data", "Response"+ response);
+                        Log.e("Data", "Hola");
                     } else {
                         int statusCode = response.code();
                         // handle request errors depending on status code
@@ -100,8 +111,9 @@ public class SystemIndexActivityView extends AppCompatActivity {
                 }
 
                 @Override
-                public void onFailure(Call<PopularResponse> call, Throwable t) {
-                    Log.d("", "");
+                public void onFailure(Call<List<PopularResponse>> call, Throwable t) {
+                    Log.e("Data", "Hola7" +call);
+                    Log.e("Data", "Hola8" +t);
                 }
             });
         //}

@@ -1,3 +1,4 @@
+/*
 package com.example.marketapp;
 
 import android.content.Context;
@@ -21,9 +22,11 @@ public class SystemIndexAdapter extends RecyclerView.Adapter<SystemIndexAdapter.
     private List<PopularModel> popularModelList;
     private Context context;
 
-    public SystemIndexAdapter(List<PopularModel> listPopularModel) {
+  */
+/*  public SystemIndexAdapter(List<PopularModel> listPopularModel) {
         this.popularModelList = listPopularModel;
-    }
+    }*//*
+
 
     @NonNull
     @Override
@@ -43,7 +46,6 @@ public class SystemIndexAdapter extends RecyclerView.Adapter<SystemIndexAdapter.
                 .placeholder(R.mipmap.ic_launcher_round)
                 .error(R.mipmap.ic_launcher_round);
         Glide.with(context).load(popularModel.getImageCategory()).apply(options).into(holder.binding.imageViewPicture);
-        Glide.with(context).load(popularModel.getImageCategory()).apply(options).into(holder.binding.imageViewPicture);
         holder.binding.textViewName.setText(popularModel.getNameCategory());
     }
 
@@ -51,7 +53,6 @@ public class SystemIndexAdapter extends RecyclerView.Adapter<SystemIndexAdapter.
     public int getItemCount() {
         return popularModelList.size();
     }
-
 
     public void updateAnswers(List<PopularModel> items) {
         popularModelList = items;
@@ -95,3 +96,4 @@ public class SystemIndexAdapter extends RecyclerView.Adapter<SystemIndexAdapter.
     }
 
 }
+*/

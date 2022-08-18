@@ -4,8 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class PopularModel {
 
-    private PopularModel popularModel;
-
     @SerializedName("id")
     private String idCategory;
 
@@ -48,7 +46,4 @@ public class PopularModel {
     public void setImageCategory(String imageCategory) {
         this.imageCategory = imageCategory;
     }
-
-
-
 }
