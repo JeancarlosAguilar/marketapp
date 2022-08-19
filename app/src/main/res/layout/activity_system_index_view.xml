@@ -18,14 +18,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.92" />
+        app:layout_constraintGuide_percent="0.9" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline21"
@@ -33,6 +33,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
 
 
     <LinearLayout
@@ -90,9 +97,48 @@
 
     </LinearLayout>
 
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline19">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_systemindex_msg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/muli"
+        android:text="@string/tv_systemindex_msg_show_1"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline22" />
+
+    <TextView
+        android:id="@+id/tv_systemindex_msg_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/muli_extra_light"
+        android:text="@string/tv_systemindex_msg_show_2"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline22" />
+
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_popularproduct"
+        android:id="@+id/recyclerViewGerments"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline16"
@@ -118,7 +164,6 @@
             android:layout_width="0dp"
             android:layout_height="20dp"
             android:layout_marginStart="10dp"
-            android:layout_marginBottom="5dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/shop_icon_on" />
 
@@ -126,7 +171,6 @@
             android:id="@+id/img_favorite"
             android:layout_width="0dp"
             android:layout_height="20dp"
-            android:layout_marginBottom="5dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/heart_off" />
 
@@ -134,7 +178,6 @@
             android:id="@+id/img_chat"
             android:layout_width="0dp"
             android:layout_height="20dp"
-            android:layout_marginBottom="5dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/chat_off" />
 
@@ -143,7 +186,6 @@
             android:layout_width="0dp"
             android:layout_height="20dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="5dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/user_off" />
 

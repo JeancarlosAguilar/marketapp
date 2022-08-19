@@ -61,6 +61,8 @@
     <string name="tv_signup2_msg_show_2">Complete Profile</string>
     <string name="tv_signup2_msg_show_3">Complete your details or continue \n with social media</string>
 
+    <string name="tv_systemindex_msg_show_1">Popular Garments</string>
+    <string name="tv_systemindex_msg_show_2">See More</string>
 
     <string name="tv_ls_msg_show_1">Login Success</string>
     <string name="tv_ls_msg_show_2">Login Success</string>
