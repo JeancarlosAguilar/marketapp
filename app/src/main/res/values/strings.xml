@@ -64,6 +64,16 @@
     <string name="tv_systemindex_msg_show_1">Popular Garments</string>
     <string name="tv_systemindex_msg_show_2">See More</string>
 
+    <string name="tv_systemindex_msg_show_3">Smartphone</string>
+    <string name="tv_systemindex_msg_show_4">Fashion</string>
+    <string name="tv_systemindex_msg_show_5">Special for you</string>
+    <string name="tv_systemindex_msg_show_6">Cashback 20%</string>
+    <string name="tv_systemindex_msg_show_7">Flash \n Deal</string>
+    <string name="tv_systemindex_msg_show_8">Bill</string>
+    <string name="tv_systemindex_msg_show_9">Game</string>
+    <string name="tv_systemindex_msg_show_10">Daily \n Gift</string>
+    <string name="tv_systemindex_msg_show_11">More</string>
+
     <string name="tv_ls_msg_show_1">Login Success</string>
     <string name="tv_ls_msg_show_2">Login Success</string>
     <string name="btn_continue_ls_show">Back to home</string>
