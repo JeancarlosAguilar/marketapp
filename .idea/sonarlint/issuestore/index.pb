@@ -5,10 +5,6 @@ w
 Gapp/src/main/java/com/example/marketapp/presenter/SignUp2Presenter.java,3\5\35a6114ac285cdb79e149306d0b07dac0e9511ae
 w
 Gapp/src/main/java/com/example/marketapp/data/AdminSQLiteOpenHelper.java,3\7\375ef35b921c4ecd360661acd87ac9a9f619f690
-y
-Iapp/src/main/java/com/example/marketapp/launch/SlideViewPagerAdapter.java,9\7\97e77bda2a4596c9fda7bafd4074fee5920f9357
-q
-Aapp/src/main/java/com/example/marketapp/launch/SlideActivity.java,f\3\f3b44e25584b19c2d594f0faacffe688ff9fcc3f
 t
 Dapp/src/main/java/com/example/marketapp/model/LoginSuccessModel.java,c\2\c21d91448730bfe28834bcccc67c926c60e28fbd
 n

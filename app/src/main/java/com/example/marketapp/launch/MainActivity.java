@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
+import com.example.marketapp.GarmentsDetailsActivityView;
 import com.example.marketapp.R;
 import com.example.marketapp.SystemIndexActivityView;
 import com.example.marketapp.view.SignInActivityView;
@@ -21,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent intent = new Intent(MainActivity.this, SignInActivityView.class);
+//            Intent intent = new Intent(MainActivity.this, SignInActivityView.class);
+            Intent intent = new Intent(MainActivity.this, GarmentsDetailsActivityView.class);
             startActivity(intent);
             finish();
         }, 1000);

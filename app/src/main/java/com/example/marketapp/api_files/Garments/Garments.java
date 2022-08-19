@@ -1,9 +1,14 @@
 package com.example.marketapp.api_files.Garments;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Garments {
 
+    @SerializedName("title")
     private String title;
-    private String thumbnail;
+
+    @SerializedName("thumbnail")
+    private String image;
 
     public String getTitle() {
         return title;
@@ -13,12 +18,12 @@ public class Garments {
         this.title = title;
     }
 
-    public String getThumbnail() {
-        return thumbnail;
+    public String getImage() {
+        return image;
     }
 
-    public void setThumbnail(String thumbnail) {
-        this.thumbnail = thumbnail;
+    public void setImage(String image) {
+        this.image = image;
     }
 
 }

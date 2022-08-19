@@ -36,7 +36,7 @@ public class ListGarmentsAdapter extends RecyclerView.Adapter<ListGarmentsAdapte
         Garments item = dataset.get(position);
         holder.TextViewGarments.setText(item.getTitle());
 
-        Glide.with(context).load(item.getThumbnail())
+        Glide.with(context).load(item.getImage())
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.ImageViewGarments);

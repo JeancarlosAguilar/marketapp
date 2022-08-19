@@ -67,16 +67,7 @@ public class SystemIndexActivityView extends AppCompatActivity {
             @Override
             public void onResponse(Call<GarmentsResponse> call, Response<GarmentsResponse> response) {
                 if (response.isSuccessful()) {
-                    GarmentsResponse garmentsResponse = response.body();
-                    ArrayList<Garments> listGarments = garmentsResponse.getResults();
-
-                    listGarmentsAdapter.addListGarments(listGarments);
-
-                    /*for (int i = 0; i < listaItems.size(); i++) {
-                        Item item = listaItems.get(i);
-                        Log.i(TAG, "Item: " + item.getTitle());
-                    }*/
-
+                    listGarmentsAdapter.addListGarments(response.body().getResults());
                 } else {
                     Log.e(TAG, "onResponse: " + response.body());
                 }
