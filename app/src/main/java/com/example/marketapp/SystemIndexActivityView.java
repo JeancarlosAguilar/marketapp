@@ -2,19 +2,15 @@ package com.example.marketapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.marketapp.api_files.Garments.Garments;
-import com.example.marketapp.api_files.Garments.GarmentsResponse;
-import com.example.marketapp.api_files.Garments.GarmentsService;
-import com.example.marketapp.api_files.Garments.ListGarmentsAdapter;
+import com.example.marketapp.api_files.garments.GarmentsResponse;
+import com.example.marketapp.api_files.garments.GarmentsService;
+import com.example.marketapp.api_files.garments.ListGarmentsAdapter;
 import com.example.marketapp.databinding.ActivitySystemIndexViewBinding;
-
-import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;

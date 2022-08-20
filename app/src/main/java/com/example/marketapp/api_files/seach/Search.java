@@ -1,8 +1,8 @@
-package com.example.marketapp.api_files.Garments;
+package com.example.marketapp.api_files.seach;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Garments {
+public class Search {
 
     @SerializedName("title")
     private String title;
@@ -25,5 +25,4 @@ public class Garments {
     public void setImage(String image) {
         this.image = image;
     }
-
 }

@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-//            Intent intent = new Intent(MainActivity.this, SignInActivityView.class);
-            Intent intent = new Intent(MainActivity.this, GarmentsDetailsActivityView.class);
+            Intent intent = new Intent(MainActivity.this, SignInActivityView.class);
+//            Intent intent = new Intent(MainActivity.this, GarmentsDetailsActivityView.class);
             startActivity(intent);
             finish();
-        }, 1000);
+        }, 4000);
 
 
     }

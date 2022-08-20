@@ -1,4 +1,4 @@
-package com.example.marketapp.api_files.Garments;
+package com.example.marketapp.api_files.garments;
 
 import com.google.gson.annotations.SerializedName;
 
