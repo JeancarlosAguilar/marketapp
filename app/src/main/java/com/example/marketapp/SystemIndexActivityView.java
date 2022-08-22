@@ -6,12 +6,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
+import android.view.View;
 
 import com.example.marketapp.api_files.garments.Garments;
 import com.example.marketapp.api_files.garments.GarmentsResponse;
 import com.example.marketapp.api_files.garments.GarmentsService;
 import com.example.marketapp.api_files.garments.ListGarmentsAdapter;
+import com.example.marketapp.api_files.seach.SearchResponse;
+import com.example.marketapp.api_files.seach.SearchService;
 import com.example.marketapp.databinding.ActivitySystemIndexViewBinding;
 
 import retrofit2.Call;
@@ -46,10 +48,11 @@ public class SystemIndexActivityView extends AppCompatActivity implements ListGa
                 .build();
 
         botenerDatos();
-        btnr();
+        btnProfile();
+        btnSearch();
     }
 
-    private void btnr() {
+    private void btnProfile() {
         //TODO - AÑADIR MVP
         binding.imgProfile.setOnClickListener(view -> {
             Intent intent = new Intent(SystemIndexActivityView.this, SystemAccActivityView.class);
@@ -76,6 +79,14 @@ public class SystemIndexActivityView extends AppCompatActivity implements ListGa
                 Log.e(TAG, "onResponseError2: " + t.getMessage());
             }
         });
+    }
+
+    private void btnSearch() {
+        binding.etSearch.setOnClickListener(view -> {
+            Intent intent = new Intent(this, SearchActivityView.class);
+            startActivity(intent);
+        });
+
     }
 
     @Override

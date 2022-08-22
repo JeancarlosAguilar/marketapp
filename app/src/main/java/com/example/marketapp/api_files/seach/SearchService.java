@@ -1,11 +1,11 @@
 package com.example.marketapp.api_files.seach;
 
-import com.example.marketapp.api_files.garments.GarmentsResponse;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
 
-public interface SearchService { //TODO : Pendiente asignar parametros de busqueda
-    @GET("search?category=MCO1430")
-    Call<SearchResponse> getListSearch();
+public interface SearchService {
+    @GET("search")
+    Call<SearchResponse> find(@Query("q") String search);
 }

@@ -21,10 +21,12 @@ public class ListSearchAdapter extends RecyclerView.Adapter<ListSearchAdapter.Vi
 
     private ArrayList<Search> dataset;
     private Context context;
+    private final ListSearchAdapter.OnItemClickListener listener;
 
-    public ListSearchAdapter(Context context) {
+    public ListSearchAdapter(Context context, ListSearchAdapter.OnItemClickListener listener) {
         this.context = context;
         dataset = new ArrayList<>();
+        this.listener = listener;
     }
 
     @NonNull
@@ -37,9 +39,10 @@ public class ListSearchAdapter extends RecyclerView.Adapter<ListSearchAdapter.Vi
     @Override
     public void onBindViewHolder(@NonNull ListSearchAdapter.ViewHolder holder, int position) {
         Search item = dataset.get(position);
+        holder.bind(item, listener);
         holder.TextViewSearch.setText(item.getTitle());
 
-        Glide.with(context).load(item.getImage())
+        Glide.with(context).load(item.getThumbnail())
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.ImageViewSearch);
@@ -61,10 +64,19 @@ public class ListSearchAdapter extends RecyclerView.Adapter<ListSearchAdapter.Vi
 
         public ViewHolder(View itemView) {
             super(itemView);
-
             ImageViewSearch = itemView.findViewById(R.id.ImageViewSearch);
             TextViewSearch = itemView.findViewById(R.id.TextViewSearch);
         }
+
+        public void bind(final Search item, final ListSearchAdapter.OnItemClickListener listener) {
+            itemView.setOnClickListener(view -> {
+                listener.onItemClick(item);
+            });
+        }
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(Search item);
     }
 
 }

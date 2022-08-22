@@ -28,7 +28,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:gravity="center_horizontal"
-            android:text="Nombre"
+            android:text="Name"
             android:textAllCaps="true" />
     </LinearLayout>
 
