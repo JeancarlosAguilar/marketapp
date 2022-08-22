@@ -6,7 +6,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
+import com.example.marketapp.api_files.garments.Garments;
 import com.example.marketapp.api_files.garments.GarmentsResponse;
 import com.example.marketapp.api_files.garments.GarmentsService;
 import com.example.marketapp.api_files.garments.ListGarmentsAdapter;
@@ -19,7 +21,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-public class SystemIndexActivityView extends AppCompatActivity {
+public class SystemIndexActivityView extends AppCompatActivity implements ListGarmentsAdapter.OnItemClickListener {
 
     private static final String TAG = "GETAPI";
     private Retrofit retrofit;
@@ -32,7 +34,7 @@ public class SystemIndexActivityView extends AppCompatActivity {
         binding = ActivitySystemIndexViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        listGarmentsAdapter = new ListGarmentsAdapter(this);
+        listGarmentsAdapter = new ListGarmentsAdapter(this, this);
         binding.recyclerViewGerments.setAdapter(listGarmentsAdapter);
         binding.recyclerViewGerments.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
@@ -65,14 +67,27 @@ public class SystemIndexActivityView extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     listGarmentsAdapter.addListGarments(response.body().getResults());
                 } else {
-                    Log.e(TAG, "onResponse: " + response.body());
+                    Log.e(TAG, "onResponseError1: " + response.body());
                 }
             }
 
             @Override
             public void onFailure(Call<GarmentsResponse> call, Throwable t) {
-                Log.e(TAG, "onResponse: " + t.getMessage());
+                Log.e(TAG, "onResponseError2: " + t.getMessage());
             }
         });
+    }
+
+    @Override
+    public void onItemClick(Garments item) {
+        Intent intent = new Intent(this, GarmentsDetailsActivityView.class);
+        intent.putExtra("title", item.getTitle());
+        intent.putExtra("price", item.getPrice());
+        intent.putExtra("availableQuantity", item.getAvailableQuantity());
+        intent.putExtra("soldQuantity", item.getSoldQuantity());
+        intent.putExtra("thumbnail", item.getThumbnail());
+        intent.putExtra("stateName", item.getAddress().getStateName());
+        intent.putExtra("cityName", item.getAddress().getCityName());
+        startActivity(intent);
     }
 }

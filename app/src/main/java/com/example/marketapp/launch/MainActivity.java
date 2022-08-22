@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-//            Intent intent = new Intent(MainActivity.this, SignInActivityView.class);
-            Intent intent = new Intent(MainActivity.this, SearchActivityView.class);
+            Intent intent = new Intent(MainActivity.this, SignInActivityView.class);
+//            Intent intent = new Intent(MainActivity.this, SearchActivityView.class);
             startActivity(intent);
             finish();
         }, 4000);

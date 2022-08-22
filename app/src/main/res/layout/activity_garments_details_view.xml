@@ -36,7 +36,7 @@
         app:layout_constraintGuide_percent="0.84" />
 
     <ImageView
-        android:id="@+id/img_garments_details"
+        android:id="@+id/imgBack"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="35dp"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ImageViewGarments"
+        android:id="@+id/imgThumbnail"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline25"
@@ -85,7 +85,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/TextViewGarmentsName"
+                android:id="@+id/tvTitle"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginStart="20dp"
@@ -106,7 +106,7 @@
                 app:drawableEndCompat="@drawable/heart_on_1" />
 
             <TextView
-                android:id="@+id/TextViewGarmentsAvailable"
+                android:id="@+id/tvPrice"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
@@ -116,7 +116,15 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/TextViewGarmentsSolOut"
+                android:id="@+id/space1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="50dp" />
+
+
+            <TextView
+                android:id="@+id/tvAvailableQuantity"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
@@ -126,7 +134,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/TextViewGarmentsPrice"
+                android:id="@+id/tvSoldQuantity"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
@@ -136,7 +144,14 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/TextViewGarmentsBrand"
+                android:id="@+id/space2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="50dp" />
+
+            <TextView
+                android:id="@+id/tvAddressStateName"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
@@ -146,27 +161,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/TextViewGarmentsValueName"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="50dp"
-                android:fontFamily="@font/muli"
-                android:text="@string/tv_garments_detail_msg_show_2"
-                android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/TextViewGarmentsStateName"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="50dp"
-                android:fontFamily="@font/muli"
-                android:text="@string/tv_garments_detail_msg_show_2"
-                android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/TextViewGarmentsCityName"
+                android:id="@+id/tvAddressCityName"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"

@@ -17,12 +17,14 @@ import java.util.ArrayList;
 
 public class ListGarmentsAdapter extends RecyclerView.Adapter<ListGarmentsAdapter.ViewHolder> {
 
-    private ArrayList<Garments> dataset;
+    private final ArrayList<Garments> dataset;
     private Context context;
+    private final OnItemClickListener listener;
 
-    public ListGarmentsAdapter(Context context) {
+    public ListGarmentsAdapter(Context context, OnItemClickListener listener) {
         this.context = context;
         dataset = new ArrayList<>();
+        this.listener = listener;
     }
 
     @NonNull
@@ -35,9 +37,10 @@ public class ListGarmentsAdapter extends RecyclerView.Adapter<ListGarmentsAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Garments item = dataset.get(position);
+        holder.bind(item, listener);
         holder.TextViewGarments.setText(item.getTitle());
 
-        Glide.with(context).load(item.getImage())
+        Glide.with(context).load(item.getThumbnail())
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.ImageViewGarments);
@@ -59,17 +62,18 @@ public class ListGarmentsAdapter extends RecyclerView.Adapter<ListGarmentsAdapte
 
         public ViewHolder(View itemView) {
             super(itemView);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    System.out.println("ENTRA AL CLICK");
-                    Toast.makeText(context, "ENTRA AL CLICK", Toast.LENGTH_SHORT).show();
-                }
-            });
-
             ImageViewGarments = itemView.findViewById(R.id.ImageViewGarments);
             TextViewGarments = itemView.findViewById(R.id.TextViewGarments);
         }
+
+        public void bind(final Garments item, final OnItemClickListener listener) {
+            itemView.setOnClickListener(view -> {
+                listener.onItemClick(item);
+            });
+        }
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(Garments item);
     }
 }

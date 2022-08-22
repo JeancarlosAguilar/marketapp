@@ -17,3 +17,9 @@ r
 Bapp/src/main/java/com/example/marketapp/SystemAccActivityView.java,b\b\bbeeff83983b62148ac9c8554844c18b2b07f537
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+y
+Iapp/src/main/java/com/example/marketapp/launch/SlideViewPagerAdapter.java,9\7\97e77bda2a4596c9fda7bafd4074fee5920f9357
+q
+Aapp/src/main/java/com/example/marketapp/launch/SlideActivity.java,f\3\f3b44e25584b19c2d594f0faacffe688ff9fcc3f
+s
+Capp/src/main/java/com/example/marketapp/api_files/seach/Search.java,d\8\d87ea8353a19fc4300be431eb859d714603c5bac
